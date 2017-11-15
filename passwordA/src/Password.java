@@ -6,10 +6,9 @@ public class Password {
 		System.out.print("ENTER YOUR PIN: ");
 		while(wrong) {
 			Scanner s1 = new Scanner(System.in);
-			String num = s1.next();
-			Integer i = null;
+			int i = 0;
 			try {
-				i = Integer.parseInt(num);
+				i = s1.nextInt();
 			}catch(Exception e) {
 				System.out.println("\r" + "ILLEGAL CHARACTER! TRY AGAIN!");
 				System.out.print("ENTER YOUR PIN:");
